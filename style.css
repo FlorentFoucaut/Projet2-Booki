@@ -16,7 +16,7 @@ top: 44px;
 .menu ul{
     list-style-type: none;
     display: flex;
-    justify-content: right;
+    top: 48px;
 }
 
 .menu li{
