@@ -1,24 +1,61 @@
 body{
     max-width: 1400px;
+    background-color: red;
 
 }
-
+/*Logo*/
 #Booki{
-position: absolute;
-width: 61.09px;
-height: 19px;
-left: 55px;
-top: 44px;
+    position: relative;
+    width: 61.09px;
+    height: 19px;
+    left: 55px;
+    top: 44px;
+
+
 }
 
 
-/* Menu */
-.menu ul{
+/*Navigation*/
+nav ul 
+{
     list-style-type: none;
     display: flex;
-    top: 48px;
+    justify-content: flex-end;
 }
 
-.menu li{
-    margin-right: 77px;
+nav li
+{
+    margin-right: 67px;
+}
+
+nav a 
+{
+    color:#000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding: 46px;
+    transition: all 150ms;
+}
+
+
+/*Formulaire Recherche*/
+label i{
+
+/* Grey */
+background: #F2F2F2;
+
+/* Grey */
+border: 1px solid #F2F2F2;
+border-radius: 15px 0px 0px 15px;
+
 }
