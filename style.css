@@ -49,6 +49,34 @@ nav a:hover
 }
 
 
+/*Contenu Header*/
+.contenu_header{
+    position: relative;
+   left: 55px;
+   top:67px;
+}
+
+.contenu header h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.l1 
+{
+    position : relative;
+    top: -15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+
+
 /*Formulaire Recherche*/
 label i{
     position: relative;
@@ -75,7 +103,8 @@ form button {
     background-color: #0065FC;
     color: white;
     font-size: 18px;
-    padding-left: 14px;
+    padding-right: 16px;
+    padding-left: 16px;
     padding-top: 14px;
     padding-bottom: 14px;
     border-style: none;
@@ -84,5 +113,5 @@ form button {
 }
 
 form button i {
-    visibility: collapse;
+    visibility: hidden;
 }
