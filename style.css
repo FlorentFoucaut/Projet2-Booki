@@ -176,9 +176,8 @@ form button {
     text-align:justify;
     cursor: pointer;
 }
-
-form button i {
-    visibility: hidden;
+#loupe{
+    display: none;
 }
 
 /* Hébergement à Marseille*/
@@ -632,9 +631,36 @@ nav li:hover {
 }
 nav a:hover {
   border-top: none;
-  color: black;
 }
-nav li:hover > a {
-  color: #0065FC;
+
+/*Header*/
+
+.contenu_header{
+  padding-top:31px;
 }
+
+form input{
+  
+  padding-left: 350px;
+}
+#search {
+  display :none;
+}
+#loupe{
+  display: block;
+}
+
+/*Filtres*/
+
+.conteneur ul {
+  max-height:150px;
+  padding-left: 10%;
+  gap:25px;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-content: flex-start;
+}
+
+.l2{
+  padding-top:80px; ;
 }
