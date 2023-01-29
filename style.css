@@ -268,13 +268,20 @@ form button {
     width: 12px;
     margin-right:7px;
     margin-top: -10px;
-    color: #0065FC;
+  
   }
 
   .stars {
     position: relative;
     left: 16px;
     top: -5px;
+    color: #0065FC;
+  }
+  .grey{
+    position: relative;
+    left: 16px;
+    top: -5px;
+    color:#F2F2F2;
   }
   
   .card:hover {
@@ -365,25 +372,39 @@ border: 5px solid #FFFF;
     width: 12px;
     margin-left:7px;
     margin-top: -10px;
-    color: #0065FC;
   }
-
+  .greypop2{
+    position: relative;
+    top : 40px;
+    left: 150px;
+    color:#F2F2F2;
+  }
+  
+  .greypop3{
+    position: relative;
+    top : 20px;
+    left: 150px;
+    color:#F2F2F2;
+  }
   .stars2 {
     position: relative;
     top : 40px;
     left: 150px;
+    color: #0065FC;
   }
 
   .stars3 {
     position: relative;
     top:20px;
     left: 150px;
+    color: #0065FC;
   }
 
   .stars4 {
     position: relative;
     top : 40px;
     left: 150px;
+    color: #0065FC;
   }
   .card2:hover {
     box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
