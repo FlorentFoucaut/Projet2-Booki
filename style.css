@@ -433,8 +433,11 @@ border: 5px solid #FFFF;
 
   }
   .cards3 {
-    max-width:100%;
+    max-width:90%;
     margin-top: 108px;
+
+    position: relative;
+    left:40px;
     display: flex;
     flex-direction: row;
     gap: 43px;
