@@ -416,7 +416,6 @@ border: 5px solid #FFFF;
     position: relative;
     width: 100%;
     height: 493px;
-    left: 40px;
     top: 60px;
 
 
@@ -424,7 +423,9 @@ border: 5px solid #FFFF;
 
   #activites h3{
     position: relative;
+    max-width:50%;
     top:80px;
+    left:40px;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -432,6 +433,7 @@ border: 5px solid #FFFF;
 
   }
   .cards3 {
+    max-width:100%;
     margin-top: 108px;
     display: flex;
     flex-direction: row;
@@ -591,7 +593,7 @@ border: 5px solid #FFFF;
 
    #activites {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 493px;
     top: 120px;
 
