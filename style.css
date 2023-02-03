@@ -189,7 +189,7 @@ form button {
 }
 #hebergement {
     width: 60%;
-    height: 626px;
+    height: 100%;
     background-color:#F2F2F2 ;
     border-radius: 15px 15px 15px 15px;
     position:relative;
@@ -216,7 +216,6 @@ form button {
 }
 .cards {
         margin-top: 63px;
-
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
@@ -225,11 +224,15 @@ form button {
         gap:20px;
     }
     
-  
+    :root {
+      --cardWidth: 246px;
+      --cardHeight: 199px;
+    }
   
 .card {
-    width: 246px;
-    height:199px;
+
+  width: var(--cardWidth);
+  height: var(--cardHeight);
     box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     border-radius: 20px;
     transition: 0.3s;
@@ -329,10 +332,13 @@ form button {
     overflow: hidden;
     margin-right: 40px;
 }
-
+:root {
+  --card2Width: 343px;
+  --card2Height: 144px;
+}
 .card2 {
-width: 343px;
-height:144px;
+  width: var(--card2Width);
+  height: var(--card2Height);
 box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
 border-radius: 20px;
 transition: 0.3s;
