@@ -159,10 +159,10 @@ form button {
 /* Hébergement à Marseille*/
 .heb_pop {
     display: flex;
-    justify-content: space-between;
+    gap:7%;
 }
 #hebergement {
-    width: 60%;
+    flex-basis: 60%;
     height: 100%;
     background-color:#F2F2F2 ;
     border-radius: 15px 15px 15px 15px;
@@ -189,71 +189,54 @@ form button {
     line-height: 26px;
 }
 .cards {
+        padding-left:25px;
         margin-top: 63px;
-        overflow: hidden;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        padding-left:25px;
+        justify-content:space-around;
         gap:3%;
+       margin-right: 1rem;
     }
   
 .card {
-    max-width:100%;
-    width: 15rem;
+    flex-basis:33%;
     height:199px;
     box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     border-radius: 20px;
     transition: 0.3s;
     background-color: #FFFF;
+    object-fit: cover;
     margin-bottom: 30px;
   }
-  .card img {
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 55%;
-    box-sizing: border-box;
-    border: 5px solid #FFFF;
-  }
 
-  .contenu h5 {
-    padding-left: 16px;
-    margin-top: 4px;
-    font-style: normal;
+  .card img{
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    border : 5px solid white;
+    min-width:249px;
+    height:55%;
+    width:100%;
+  }
+  .card h5{
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
   }
-
-  .contenu p {
-    padding-left: 16px;
-    margin-top: -20px;
-    font-style: normal;
+  .card p,.card h5{    
+    margin: 5px;
+    padding-left: 4px;
+    padding-bottom: 4px;;
+  }
+  .card p{
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
   }
-
-  .contenu i{
-    height: 12px;
-    width: 12px;
-    margin-right:7px;
-    margin-top: -10px;
   
-  }
-
-  .stars {
-    position: relative;
-    left: 16px;
-    top: -5px;
+  .blue {
     color: #0065FC;
   }
+
   .grey{
-    position: relative;
-    left: 16px;
-    top: -5px;
-    color:#F2F2F2;
+    color:#D9D9D9;
   }
   
   .card:hover {
@@ -264,13 +247,14 @@ form button {
 /*Les plus populaires*/
 
 .pop {
-    width: 30%;
+    flex-basis: 30%;
     max-height: 100%;
     background-color:#F2F2F2 ;
     border-radius: 15px 15px 15px 15px;
     position:relative;
     top: 100px;
-    right:50px;
+    display:flex;
+    flex-direction:column;
 }
 
 .pop h3 {
@@ -282,13 +266,14 @@ form button {
     line-height: 26px;
     max-width:100%;
     display: flex;
-    justify-content: space-between
+    gap:65%;
+
+
    
 
 }
 
 .pop h3 i {
-    margin-right: 60px;
     color :#0065FC;
 }
 
@@ -298,90 +283,51 @@ form button {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    overflow: hidden;
     padding-right: 40px;
+    flex-basis:100%;
+    
 }
-:root {
-  --card2Width: 343px;
-  --card2Height: 144px;
-}
+
 .card2 {
-  block-size:50%;
-  width: var(--card2Width);
-  height: var(--card2Height);
+  display:flex;
+  flex-basis:100%;
 box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
 border-radius: 20px;
 transition: 0.3s;
 background-color: #FFFF;
-margin-bottom: 10px;
-
+flex-direction:row;
 }
+
 .card2 img {
 object-fit: cover;
 border-radius: 20px 0px 0px 20px;
 width: 40%;
-height: 100%;
+height:144px;
 box-sizing: border-box;
 border: 5px solid #FFFF;
 }
+.contenupop{
+  flex-basis:100%;
+  display:flex;
+  flex-direction:column;
+}
+.contenupop h5{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom:0;
+  margin-top:10px;
+}
 
-.contenupop h5 {
-    padding-left: 150px;
-    margin-top: -134px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-  }
+.contenupop p{
+  font-weight: 400;
+  font-size: 14px;
+}
 
-  .contenupop p {
-    padding-left: 150px;
-    margin-top: -20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-  }
+.stars2{
+  margin-top:auto;
+}
 
-  .contenupop i{
-    height: 12px;
-    width: 12px;
-    margin-left:7px;
-    margin-top: -10px;
-  }
-  .greypop2{
-    position: relative;
-    top : 40px;
-    left: 150px;
-    color:#F2F2F2;
-  }
-  
-  .greypop3{
-    position: relative;
-    top : 20px;
-    left: 150px;
-    color:#F2F2F2;
-  }
-  .stars2 {
-    position: relative;
-    top : 40px;
-    left: 150px;
-    color: #0065FC;
-  }
 
-  .stars3 {
-    position: relative;
-    top:20px;
-    left: 150px;
-    color: #0065FC;
-  }
-
-  .stars4 {
-    position: relative;
-    top : 40px;
-    left: 150px;
-    color: #0065FC;
-  }
   .card2:hover {
     box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
     cursor :pointer;
@@ -390,8 +336,7 @@ border: 5px solid #FFFF;
   /* Activités à Marseille*/
   #activites {
     position: relative;
-    width: 100%;
-    height: 493px;
+  
     top: 60px;
 
 
@@ -411,19 +356,19 @@ border: 5px solid #FFFF;
   .cards3 {
     max-width:95%;
     margin-top: 108px;
-
+    flex-wrap: wrap;;
     position: relative;
-    left:40px;
     display: flex;
     flex-direction: row;
     gap: 25px;
     overflow: hidden;
     padding-bottom:20px;
-    padding-left:10px;
+    margin-left:20px;
 }
 
 .card3 {
-    width: 302px;
+    flex-basis:25%;
+    max-width: 302px;
     height:444px;
     box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
     border-radius: 20px;
@@ -467,6 +412,7 @@ border: 5px solid #FFFF;
     gap:230px;
     background-color: #F2F2F2;
     margin-left: 48px;
+    flex-wrap: wrap;;
   }
 
   footer ul {
@@ -511,70 +457,33 @@ border: 5px solid #FFFF;
   }
     .pop h3{
         top : 5px;
+
+
     }
 
-    .pop h3 i {
-        margin-left: 590px ;
-    }
   .cards2{
     padding-top: 10px;
     padding-bottom: 53px;
-    gap:23px;
     flex-direction: row;
     align-items: center;
-
+flex-basis:33%;
   }
 
   .card2{
-    width: 252px;
+  max-width: 250px;
+  flex-basis:30%;
+  flex-grow:1;
   } 
 
-  .card2 img{
-    width:40%;
-  }
-  .contenupop h5 {
-    padding-left: 100px;
-    white-space: pre-line;
-  }
-
-  .contenupop p {
-    padding-left: 100px;
-}
-
-
-  .stars2 {
-    top:35px;
-    left: 100px;
-  }
-  .greypop2{
-    top:40px;
-    left: 200px;
-  }
-
   
-  .greypop3{
-    top:40px;
-    left: 200px;
-  }
-  .stars3 {
-    position: relative;
-    top:20px;
-    left: 100px;
-  }
-
-
-  .stars4 {
-    top : 20px;
-    left: 100px;
-  }
 
   /*Activités à Marseille*/
 
    #activites {
-    position: relative;
+
     max-width: 100%;
     height: 493px;
-    top: 120px;
+
 
 
   }
@@ -588,10 +497,7 @@ border: 5px solid #FFFF;
 
 
   }
-  .cards3{
-    width:100%;
-    gap:43px;
-  }
+
   .card3 img{
     height:80%;
   }
@@ -610,15 +516,8 @@ border: 5px solid #FFFF;
     cursor :pointer;
   }
 
-
-  /*Footer*/
-
-  footer{
-    width: 90%;
-    gap:30px;
   }
 
-}
   @media screen and (max-width: 768px) {
     /*Logo*/
 
@@ -665,7 +564,10 @@ nav a:hover {
 
 .contenu_header{
   padding-top:31px;
+   left: 0px;
+
 }
+  
 
 form input{
   
@@ -680,15 +582,6 @@ form input{
 
 /*Filtres*/
 
-.conteneur ul {
-  max-width:100%;
-  max-height:150px;
-  padding-left: 10%;
-  gap:25px;
-  flex-direction: column;
-  flex-wrap:wrap;
-  align-content: flex-start;
-}
 
 .l2{
   padding-top:80px; ;
@@ -697,11 +590,13 @@ form input{
 .heb_pop{
   flex-direction: column-reverse;
 }
+
 .card{
-  width: 500px;
+ flex-basis:100%;
 }
 .cards{
   flex-direction: column;
+
 }
 .pop{
   width:100%;
@@ -711,40 +606,19 @@ form input{
   border-radius: 0px 0px 0px 0px;
 }
 .pop h3{
-width:80%
+width:80%;
+gap:30%;
 }
-.pop h3 i {
-margin-left: 1px;
-margin-right: 0px;
 
-}
 .card2{
-  width:500px;
+   flex-basis:100%;
+   max-width: 100%;
+   min-width: 100%;
 }
+.cards2{ 
 
-.contenupop h5 {
-  padding-left: 200px;
-}
-.contenupop p {
-  padding-left: 200px;
-}
-
-
-.stars2 {
-  left: 200px;
-}
-
-.stars3 {
-  top:40px;
-  left: 200px;
-}
-
-.stars4 {
-  top:40px;
-  left: 200px;
-}
-.cards2{
   flex-direction: column;
+
 }
 #hebergement{
   width:100%;
@@ -760,20 +634,20 @@ margin-right: 0px;
 
 
 /*Activités à MArseille*/
-#activites{
-  top:1000px;
-  left:0px;
-}
+
+#activ
 #activites h3{
   margin-left:40px;
 }
 .card3{
-  width:500px;
+  flex-basis:100%;
+  min-width:100%;
 }
 .cards3{
   flex-direction : column;
-  align-items: center;
-  width:90%;
+ justify-content: flex-start;
+  width:100%;
+
 }
   
 
